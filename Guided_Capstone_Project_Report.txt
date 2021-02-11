@@ -1,0 +1,20 @@
+Guided Capstone Project Report
+
+This project aims to build a predictive model for ticket price based on a number of facilities, or properties, featured at resorts (at the resorts). Big Mountain suspects it may not be maximizing its returns, relative to its position in the market as a high-quality resort. It also does not have a strong sense of what facilities matter most to visitors, particularly which ones they're most likely to pay more for.  This model will be used to provide guidance for Big Mountain's pricing and future facility investment plans. 
+
+The data we moved forward with was that of 277 resorts spread across the United States, measured on 25 values such as a resort's number of years open, fast four-person chair lifts, and amount of skiable terrain. As our aim was to build predictive model for ticket price based on ski resorts, this was our most important column of data. We chose to measure each resort on its Adult Weekend ticket price. At $100 and above, there is almost no difference between weekday and weekend price, and the weekend price column has the fewest missing values so we dropped weekday.
+
+We then ran a series of tests to explore the relationships between the various features at each resort in an effort to discover those most closely associated with ticket price. The features that resulted being the most strongly correlated to Adult Weekend Ticket price were number of fast quads, runs, and amount of snow making, i.e. guaranteed snow. Facilities that support night skiing also seem to factor heavily on ticket price, though more relevant around densely populated areas, not Big Mountain. 
+
+The next step was to split our data into train and test sets. We calculated, among other metrics, mean absolute error which essentially tells you that, on average, you might expect to be off by around $19 if you guessed ticket price based on an average of known values. We built a best linear model and a best random forest model.
+
+With Big Mountain's current Adult Weekend ticket price at $81, our modelling suggests its facilities could support an increased price of $95.87. Even with an expected mean absolute value of $10.39, this suggests the resort has room for an increase. Of course, all of this depends on the assumption that other resorts accurately set their prices according to what the market supports. Considering the gap, it is safe to say Big Mountain is undercharging. 
+
+The scenario of adding a new chair lift would increase operating costs but also support an increase in ticket price of $8.61. Regarding run closures, our model predicts closing one run would not affect ticket price support, and while closing 2 or 3 would reduce support, it may as well close 4 or 5 in that case as there would be no further loss in support.
+
+It could be useful to have more price data about the resorts other than ticket price. It is possibly that Big Mountain is undervalueing other aspects of their faciilites and undercharging. While this model would be useful, one would have to gather more data to draw more comparisons. 
+
+
+
+
+
